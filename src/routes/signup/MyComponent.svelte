@@ -1,1 +1,0 @@
-<p class="has-text-primary">Hello MyComponent!</p>
