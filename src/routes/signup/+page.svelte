@@ -7,10 +7,14 @@
 
 <section class="hero is-fullheight-with-navbar">
 	<div class="hero-body">
-		<div class="container is-max-desktop">
-			<h1 class="title">Welcome to rally.</h1>
+		<div class="container">
+			<div class="columns">
+				<div class="column is-4 is-offset-4">
+				<h1 class="title is-size-1">Welcome to rally.</h1>
 
-			<SignupForm />
+					<SignupForm />
+				</div>
+			</div>
 		</div>
 	</div>
 </section>
