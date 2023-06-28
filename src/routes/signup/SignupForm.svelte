@@ -1,4 +1,6 @@
 <script lang="ts">
+	import { goto } from '$app/navigation';
+
 	const submit = async (e: SubmitEvent) => {
 		console.log('called submit');
 
@@ -13,7 +15,8 @@
 			},
 			body: JSON.stringify({ username, password })
 		});
-		// todo redirect user to login or dashboard
+
+		goto('/login');
 	};
 </script>
 
