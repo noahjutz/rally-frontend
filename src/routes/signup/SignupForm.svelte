@@ -1,12 +1,31 @@
-<form>
+<script lang="ts">
+	const submit = async (e: SubmitEvent) => {
+		console.log('called submit');
+
+		const data = new FormData(e.target as HTMLFormElement);
+		const username = data.get('username');
+		const password = data.get('password');
+
+		await fetch('http://localhost:8080/insertUser', {
+			method: 'POST',
+			headers: {
+				'Content-Type': 'application/json'
+			},
+			body: JSON.stringify({ username, password })
+		});
+		// todo redirect user to login or dashboard
+	};
+</script>
+
+<form on:submit|preventDefault={submit}>
 	<div class="field">
 		<p class="control">
-			<input class="input is-medium" type="text" placeholder="Username" />
+			<input class="input is-medium" name="username" type="text" placeholder="Username" />
 		</p>
 	</div>
 	<div class="field">
 		<p class="control">
-			<input class="input is-medium" type="password" placeholder="Password" />
+			<input class="input is-medium" name="password" type="password" placeholder="Password" />
 		</p>
 	</div>
 	<div class="field">
