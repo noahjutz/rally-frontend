@@ -1,11 +1,13 @@
 <script lang="ts">
 	import { goto } from '$app/navigation';
 
+	const api = import.meta.env.VITE_RALLY_API_URL;
+
 	let username: String;
 	let password: String;
 
 	const submit = async () => {
-		await fetch('http://localhost:8080/insertUser', {
+		await fetch(api + '/insertUser', {
 			method: 'POST',
 			headers: {
 				'Content-Type': 'application/json'
