@@ -1,6 +1,4 @@
 <script lang="ts">
-	export let data: any;
-
 	import Navbar from '$lib/components/Navbar.svelte';
 </script>
 
@@ -10,15 +8,13 @@
 	</div>
 
 	<div class="hero-body">
-		<div class="container has-text-centered">
+		<div class="container">
 			<div>
-				<p class="title">rally-frontend</p>
+				<p class="title is-size-1">Rally</p>
 
-				<p class="subtitle">
-					This website connects to the <a href="https://api.rally.noahjutz.com">rally-api.</a>
-				</p>
+				<p class="subtitle">Organizing has never been this easy.</p>
 
-				<p>GET / returns: {JSON.stringify(data.hellos)}</p>
+				<a class="button is-white" href="/signup">Get started</a>
 			</div>
 		</div>
 	</div>
