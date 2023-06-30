@@ -14,7 +14,7 @@
 
 				<p class="subtitle">Organizing has never been this easy.</p>
 
-				<a class="button is-white" href="/signup">Get started</a>
+				<a class="button is-white is-large" href="/signup">Get started</a>
 			</div>
 		</div>
 	</div>
