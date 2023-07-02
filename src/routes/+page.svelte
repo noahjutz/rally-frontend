@@ -1,10 +1,10 @@
 <script lang="ts">
-	import HomeNavbar from "$lib/components/HomeNavbar.svelte";
+	import NavbarHome from '$lib/components/NavbarHome.svelte';
 </script>
 
 <section class="hero is-primary is-fullheight">
 	<div class="hero-head">
-		<HomeNavbar />
+		<NavbarHome />
 	</div>
 
 	<div class="hero-body">

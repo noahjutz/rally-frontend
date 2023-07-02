@@ -1,8 +1,8 @@
 <script>
-	import AppNavbar from "$lib/components/AppNavbar.svelte";
+	import NavbarApp from "$lib/components/NavbarApp.svelte";
 </script>
 
-<AppNavbar />
+<NavbarApp />
 
 <section class="section">
 	<div class="container">
