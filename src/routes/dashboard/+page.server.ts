@@ -7,7 +7,5 @@ export function load({ cookies }) {
 
 	const decoded = Jwt.verify(token, import.meta.env.VITE_JWT_KEY);
 
-	console.log(decoded);
-
 	return { token, decoded };
 }
