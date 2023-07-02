@@ -1,13 +1,19 @@
 <script lang="ts">
 	import { goto } from '$app/navigation';
 
+	const api = import.meta.env.VITE_RALLY_API_URL;
+
 	let username: String;
 	let password: String;
 
 	const submit = async (e: SubmitEvent) => {
-		// todo login with api
+		await fetch(api + '/login', {
+			method: 'POST',
+			headers: { 'Content-Type': 'application/json' },
+			body: JSON.stringify({ username, password })
+		});
 
-		goto('/dashboard');
+		//goto('/dashboard');
 	};
 </script>
 
