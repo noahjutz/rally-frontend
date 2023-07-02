@@ -1,10 +1,10 @@
 <script lang="ts">
 	import HeroLayout from '$lib/components/HeroLayout.svelte';
-	import Navbar from '$lib/components/Navbar.svelte';
+	import HomeNavbar from '$lib/components/HomeNavbar.svelte';
 	import LoginForm from './LoginForm.svelte';
 </script>
 
-<Navbar />
+<HomeNavbar />
 
 <HeroLayout>
 	<div class="column is-4 is-offset-4">
