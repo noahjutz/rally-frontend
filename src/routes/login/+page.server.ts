@@ -21,6 +21,6 @@ export const actions = {
 		// TODO: Handle incorrect credentials
 		cookies.set('token', token, { path: '/' });
 
-		throw redirect(302, '/dashboard');
+		throw redirect(302, '/app');
 	}
 };
