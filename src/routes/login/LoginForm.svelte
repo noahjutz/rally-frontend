@@ -13,7 +13,7 @@
 			body: JSON.stringify({ username, password })
 		});
 
-		//goto('/dashboard');
+		goto('/dashboard');
 	};
 </script>
 
