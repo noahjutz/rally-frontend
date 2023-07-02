@@ -18,8 +18,8 @@ export const actions = {
 		const tokenJson = await tokenResponse.json();
 		const token = tokenJson['token'];
 
-		cookies.set('token', token);
+		cookies.set('token', token, { path: '/' });
 
-		throw redirect(307, '/dashboard');
+		throw redirect(302, '/dashboard');
 	}
 };
